@@ -475,6 +475,14 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
           content_name: 'Quiz Finalizado - SOS Crescimento',
           status: true
         });
+        // Evento padrao (nao restrito) com parametro diferenciador, para
+        // servir de base de Conversao Personalizada no Gerenciador de Eventos
+        fbq('track', 'ViewContent', {
+          content_name: 'quiz_resultado_sos_crescimento',
+          content_category: 'Cabelo',
+          value: 179.00,
+          currency: 'BRL'
+        });
       }, 2200);
     }
   }
