@@ -32,14 +32,17 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
 </noscript>
 <!-- ============================================== -->
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 100%; height: 100%; }
 
+  :root {
+    --font-display: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    --font-body: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  }
+
   body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: var(--font-body);
     background-color: #e9e9ee;
     display: flex;
     justify-content: center;
@@ -82,7 +85,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     text-align: center;
   }
   .header-inner .logo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     color: #D4AF37;
     letter-spacing: 0.5px;
@@ -90,7 +93,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     font-size: 18px;
   }
   .header-inner h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.3;
@@ -134,7 +137,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
   }
 
   .quiz-step h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 21px;
     line-height: 1.35;
@@ -155,7 +158,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     font-size: 16px;
     color: #141b2b;
     cursor: pointer;
@@ -182,7 +185,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
   }
   @keyframes spin { to { transform: rotate(360deg); } }
   .loading-screen p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 19px;
     color: #003527;
@@ -201,7 +204,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
   .result-screen h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 20px;
     margin: 14px 0 8px;
@@ -264,7 +267,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     width: 100%;
     background: #003527;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 17px;
     padding: 20px;
@@ -316,7 +319,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
 </header>
 
 <div class="hero-banner">
-  <img src="https://soscrescimento.com.br/wp-content/uploads/2026/04/Model-1-1.png" alt="Mulher com cabelo saudavel usando Kit S.O.S Crescimento" loading="eager">
+  <img src="banner-modelo.webp" alt="Mulher com cabelo saudavel usando Kit S.O.S Crescimento" loading="eager">
 </div>
 
 <main>
@@ -415,7 +418,7 @@ src="https://www.facebook.com/tr?id=1568447494131964&ev=PageView&noscript=1"/>
     </div>
 
     <div class="product-card">
-      <img src="produto-kit.webp" alt="Kit S.O.S Crescimento Lizzante">
+      <img src="produto-kit.webp" alt="Kit S.O.S Crescimento Lizzante" loading="lazy">
       <div class="free-shipping-badge">FRETE GRATIS</div>
     </div>
 
